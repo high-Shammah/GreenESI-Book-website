@@ -1,0 +1,1353 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #EBFBF2;
+    color: #000;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 30px; 
+    margin-right: 10px; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px; 
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1; 
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+        z-index: 2; /* Ensure the burger icon (sidebar) is on top of other content */
+    }
+
+   
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+.image-text-session {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  padding: 20px;
+  background-color: #fff;
+  padding: 70px 80px; 
+  margin-bottom: 30px;
+  flex-direction: row-reverse; /* Change the flex direction */
+}
+
+
+.text-content h1 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.text-content p {
+  font-size: 26px;
+  color: #777;
+}
+
+
+.image-container img {
+ width: 700px;
+  height: 500px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+/* Style for buttons */
+.button1 {
+  background-color: #4CAF50; /* Green color for the primary button */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button2 {
+  background-color: #fff; /* Blue color for the secondary button */
+  color: #000; /* White text color */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Adjust placement of images and text */
+.image-text-session {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+  order: 2; /* Change the order to make text come before image */
+}
+
+.image-container {
+  flex: 1;
+  text-align: left; /* Align the image to the left */
+  order: 1; /* Change the order to make image come after text */
+}
+
+/* Add any other styles you need for the image and text here */
+
+
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .image-text-session {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .text-content h1 {
+      font-size: 30px;
+      text-align: center;
+      margin-top: -20px;
+      width: 100%;
+      max-width: 500px;
+      order: 1;
+  }
+
+  .text-content p {
+      font-size: 14px;
+      text-align: center;
+      margin-top: -30px;
+      margin-bottom: 70px;
+  }
+
+  .image-container {
+      margin-top: 5px;
+      order: 3;
+  }
+  .image-container img {
+      width: 420px;
+       height: 290px; 
+       object-fit: cover; 
+       border-radius: 10px;
+       order: 3;
+   }
+
+  
+   .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -20px;
+      margin-bottom: 30px;
+      order: 2;
+  }
+
+  .button1 {
+    display: block;
+    background-color: #2E8B57;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    width: 300px;
+    order: 1;
+}
+
+.button2 {
+  display: block;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: default;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  width: 300px;
+  order: 2;
+}
+
+
+
+  .break-mobile {
+      display: none;
+  }
+
+  .text-content h1 br {
+      display: none; 
+  }
+ }
+
+
+
+
+/* Computer screen styles */
+/* Default styles */
+/* Add your default styles here */
+
+/* Section headers....... This for the new landing page */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  justify-content: center;
+ 
+}
+
+.our-story,
+.our-vision,
+.our-mission {
+  background-color: #141414;
+  margin-top: -50px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px; /* Adjust as needed */
+  margin-top: 10px;
+  color: #fff;
+}
+
+.section-content {
+  align-items: center;
+  justify-content: center;
+  margin-left: 240px;
+  background-color: #141414;
+  color: #fff;
+}
+
+.section-header i {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Set initial state for sections */
+.section-header h2,
+.section-header i,
+.section-content {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation for fading in sections */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations to section headers */
+.our-story .section-header,
+.our-vision .section-header,
+.how-to-help .section-header {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.2s; /* Add delay for staggered animation */
+}
+
+/* Apply animations to sections when the "animate" class is added */
+.section-header.animate h2,
+.section-header.animate i,
+.section-content.animate {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+/* Small laptop screen styles */
+@media screen and (max-width: 1200px) {
+  /* Adjust default styles for small laptop screens */
+
+  .section-header h2 {
+    font-size: 28px; /* Adjust as needed */
+  }
+
+  .section-header i {
+    font-size: 32px;
+  }
+}
+
+
+/* Mobile screen styles */
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .section-header {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .section-header h2 {
+    font-size: 28px; /* Adjust as needed */
+    margin-bottom: 10px;
+  }
+
+  .section-header i {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  .section-content {
+    margin-left: 0;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+
+
+
+
+/* 3rd section ..... who we provide books for section*/
+
+  .picture-slider {
+      overflow: hidden; 
+    }
+    
+    .picture-container {
+      display: flex; 
+      background-color: #EBFBF2;
+      animation: slide 20s linear infinite; 
+    }
+    
+    .picture-container img {
+      width: 422px;
+      height: 196px;
+      margin-right: 20px;
+      border-radius: 7px;
+    }
+
+    .picture-container { 
+      margin-bottom: 20px;
+    }
+  
+
+.slider1 {
+  animation: slide1 10s linear infinite; 
+}
+
+.slider2 {
+  animation: slide2 8s linear infinite; 
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+
+/* Mobile responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .picture-slider {
+    overflow: hidden;
+    margin-bottom: 90px;
+  }
+
+  .picture-container {
+    display: flex;
+    flex-wrap: nowrap; 
+  }
+
+  .picture-slider img {
+      width: 190px; 
+      height: 100px; 
+      object-fit: cover; 
+    }
+
+  .slider1 {
+    animation: slide1 10s linear infinite; /* Adjust the animation duration as needed */
+  }
+
+  .slider2 {
+    animation: slide2 8s linear infinite; 
+  }
+
+  /* Keyframes for sliding animation for slider 1 */
+  @keyframes slide1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+
+  /* Keyframes for sliding animation for slider 2 */
+  @keyframes slide2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+}
+
+
+
+
+
+   /* For new landing page... sliding left and right */
+
+
+.our-initiatives {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.initiatives-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.section-header {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.initiatives-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.initiative-point {
+  flex: 0 0 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.initiative-point img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.initiative-description {
+  text-align: center;
+}
+
+.initiative-description h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.initiative-description p {
+  font-size: 16px;
+  color: #666;
+}
+@keyframes spinAndPop {
+  0% {
+    transform: rotate(0deg) scale(0.2);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.feature-box {
+  flex-basis: calc(33.33% - 40px);
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.feature-link:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.feature-text h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.feature-text p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.box-my-resume {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  flex-basis: calc(23.33% - 40px);
+}
+
+@media (max-width: 768px) {
+  .initiatives-content {
+    margin-top: -100px;
+  }
+}
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+
+/* End of new land page, slide page */
+
+
+
+   /* Book Section this is the books we accept section */
+
+
+
+  /* For new landing page... Books We Accept */
+  .books-we-accept-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #141414; /* Add a background color */
+    color: #fff;
+  }
+  
+  .book-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .book {
+    width: 100px; /* Adjust image width as needed */
+    animation: slideUp 0.5s ease-in-out, parallax 1s ease-in-out infinite alternate;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+  }
+  
+  .book img {
+    width: 100%;
+    max-height: 200px; /* Adjust the max-height as needed for different heights */
+    object-fit: cover;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .book-description {
+    border-top: 2px solid #ccc; /* Add a border to separate points */
+    padding-top: 20px; /* Add spacing between points */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Scroll animations */
+  .book-description[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .book-description[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .book-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%; /* Set a width of 100% to make it horizontal */
+  }
+
+  .book {
+    width: 100px; /* Adjust the width as needed to make it smaller */
+    height: auto;
+  }
+}
+
+  
+  
+  
+  
+
+
+
+ /* another section.. receive books section*/
+
+.receive-books {
+  padding: 100px 0;
+  background-color: #f5f5f5;
+}
+
+.receive-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-header {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.cta-button {
+  margin-top: 40px;
+  background-color: #f5f5f5;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #2E8B57;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #144e2d;
+}
+
+
+
+
+
+
+
+/* form section */
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 50px;
+  background-color: #D8F0E3;
+  position: relative;
+  overflow: hidden;
+  margin-top: -10px;
+}
+
+.donation-form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.forms-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* Adjust the form width as needed */
+  max-width: 600px; /* Limit the maximum width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style for form input fields */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input, select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#moneyFields, #booksFields {
+  display: none;
+}
+
+/* Style for the common fields that appear for both donation types */
+#name,
+#address,
+#email,
+#donationType {
+  display: block;
+}
+
+/* Style for the fields specific to donating money (additional fields) */
+#moneyFields input,
+#moneyFields select {
+  display: block;
+  width: 500px;
+  height: 30px; /* You can adjust the height as needed */
+  margin-bottom: 10px;
+}
+
+/* Style for the fields specific to donating books (additional fields) */
+#booksFields input,
+#booksFields select {
+  display: block;
+  width: auto;
+  height: 30px; /* You can adjust the height as needed */
+  margin-bottom: 10px;
+}
+
+/* Style for the "Submit" button */
+button[type="submit"] {
+  background-color: #2E8B57;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Show appropriate fields when the donation type is selected */
+#donationType {
+  margin-bottom: 20px;
+}
+
+#donationType option {
+  display: block;
+}
+
+#donationType option[value="money"]:checked ~ #moneyFields,
+#donationType option[value="books"]:checked ~ #booksFields {
+  display: block;
+}
+
+/* Your existing CSS styles */
+
+/* Add the following media query for mobile responsiveness */
+
+/* Your existing CSS styles */
+
+/* Add the following media query for mobile responsiveness */
+
+@media (max-width: 767px) {
+  .forms-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; /* Adjust the form width to fit the screen */
+    padding: 20px; /* Increase the padding for better spacing on mobile */
+  
+  }
+
+  form {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* Additional CSS styles for the common form fields */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+ 
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Additional CSS styles for the buttons */
+
+  button {
+    flex: 1;
+    padding: 10px;
+    background-color: #2E8B57;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+ /* ... Other CSS rules ... */
+
+ #moneyFields input,
+ #moneyFields select {
+   width: 100%;
+   height: 30px;
+   margin-bottom: 10px;
+ }
+
+ /* Additional CSS styles for the fields specific to donating books (additional fields) */
+ #booksFields input,
+ #booksFields select {
+   width: 100%;
+   height: 30px;
+   margin-bottom: 10px;
+ }
+
+/* Show the selected fields based on the donation type */
+#donationType {
+  width: 100%;
+  padding: 10px;
+}
+
+#donationType option[value="money"]:checked ~ #moneyFields {
+  display: block;
+}
+
+/* Adjust the styling of the "Donate Money" section for mobile */
+#moneyFields label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#moneyFields input,
+#moneyFields select,
+#moneyFields textarea {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ /* Fix the issue with the label text in Currency Selection and Donation Frequency */
+ #moneyFields label[for="currency"],
+ #moneyFields label[for="donationFrequency"] {
+   display: inline-block; /* Set the label to be inline-block */
+   width: auto; /* Allow the label to take only the necessary width */
+   margin-right: 10px; /* Add a little spacing between the label and input */
+ }
+}
+
+
+/* Styles for the popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Add other styles as needed for your popup content */
+
+
+
+
+/* another page, first section */
+
+
+.black-section {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 50px;
+
+}
+
+.section-header-2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.section-header h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.numbered-divs-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  max-width: 1800px;
+  background-color: #fff;
+}
+
+.numbered-divs-section p{
+  max-width: 450px;
+}
+
+.numbered-div {
+  display: flex;
+  justify-content: center;
+  text-align: flex-start;
+  align-items: flex-start;
+  width: 45%; 
+  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.number-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2E8B57;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numbered-div.div1 {
+  margin-top: 0;
+}
+
+.numbered-div.div2 {
+  margin-top: 260px;
+}
+
+.numbered-div.div3 {
+  margin-top: -40px; 
+  margin-right: 40px;
+}
+
+
+.numbered-div.div4 {
+  margin-top: 250px; 
+  margin-right: 40px;
+}
+
+.numbered-div.div5 {
+  margin-top: -40px; 
+  margin-right: 850px;
+}
+
+.numbered-div .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 60px;
+}
+
+.numbered-div img {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2%;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* Animation */
+.show-animation {
+  opacity: 0;
+  transform: translateY(200px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 10;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .black-section {
+      margin-top: -70px;
+  }
+
+  .section-header-2 {
+    margin-top: 60px;
+  }
+
+  .black-section h2 {
+    font-size: 26px;
+  }
+  
+  .numbered-divs-section {
+    align-items: flex-start;
+    padding: 10px; 
+  }
+
+  .numbered-div {
+    width: 90%; 
+    margin-right: 0;
+  }
+
+  .number-circle {
+      display: none;
+  }
+
+  .numbered-div img {
+      width: 300px;
+  }
+
+  .numbered-div.div1{
+      width: 300px;
+    }
+
+  .numbered-div.div2{
+    margin-top: 40px; 
+    width: 300px;
+  }
+
+  .numbered-div.div3 {
+      margin-top: 20px;
+      width: 300px;
+    }
+
+  .numbered-div.div4 {
+      margin-top: 40px;
+      width: 300px;
+  }
+
+  .numbered-div.div5{
+      margin-top: 40px;
+      margin-left: -40px;
+      margin-right: 0;
+      width: 300px;
+  }
+
+  .number-circle {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  
+    .numbered-div img {
+      width: 100%; 
+      height: auto; 
+      margin-right: 0;
+    }
+  }
+
+
+
+
+  /* Style for the header with background image ABOUT PAGE */
+.about-header {
+  background-image: url('images/992b5a52c79a9f715088d0a82648d009.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color on top of the background image */
+  text-align: center;
+  padding: 100px 0;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-content p {
+  font-size: 18px;
+}
+
+/* Style for the main content */
+.about-content {
+  text-align: center;
+  padding: 40px;
+}
+
+.about-description {
+  margin-bottom: 100px;
+}
+
+.about-description h2 {
+  font-size: 24px;
+}
+
+
+.other-captivating-content h2 {
+  font-size: 24px;
+}
+
+.other-captivating-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.other-captivating-content li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer section */
+footer {
+  background-color: #2E8B57;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 30px; 
+    margin-right: 10px; 
+}
+
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+/* Additional styles for mobile responsiveness */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+}
