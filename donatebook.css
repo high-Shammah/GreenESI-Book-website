@@ -1276,7 +1276,7 @@ button[type="submit"] {
 
 /* Style for the call to action section */
 .cta-section {
-  background-color: #f5f5f5;
+  background-color: #2E8B57;
   text-align: center;
   padding: 40px 0;
 }
@@ -1292,7 +1292,7 @@ button[type="submit"] {
 
 /* Style for call to action button */
 .cta-button {
-  background-color: #ff6600;
+  background-color: #2E8B57;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1302,7 +1302,7 @@ button[type="submit"] {
 }
 
 .cta-button:hover {
-  background-color: #ff8800;
+  background-color: #2E8B57;
 }
 
 
@@ -1353,7 +1353,7 @@ button[type="submit"] {
 
 /* Style for the "Apply for Book" button */
 .cta-button {
-  background-color: #ff6600;
+  background-color: #2E8B57;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1378,7 +1378,7 @@ button[type="submit"] {
 
 
 .cta-button:hover {
-  background-color: #ff8800;
+  background-color: #2E8B57;
 }
 
 /* Style for the "Apply for More Books" button */
