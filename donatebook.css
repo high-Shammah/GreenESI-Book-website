@@ -1226,6 +1226,250 @@ button[type="submit"] {
     }
   }
 
+/* Style for the page header BOOK PAGE, WHEN CLICKED ON RECEIVE BOOK*/
+.page-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.page-header p {
+  font-size: 18px;
+}
+
+/* Style for the book list section */
+.book-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.book {
+  max-width: 300px;
+  text-align: center;
+  justify-content: space-between ;
+  margin-bottom: 20px;
+  margin-left: 120px;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+}
+
+.book h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.book p {
+  font-size: 16px;
+}
+
+/* Style for the call to action section */
+.cta-section {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.cta-section h2 {
+  font-size: 28px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style for call to action button */
+.cta-button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #ff8800;
+}
+
+
+/* Style for the book categories section */
+.book-categories {
+  margin: 20px 360px;
+  align-items: center;
+
+}
+
+/* Style for each book category */
+.category {
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+/* Style for category subheader */
+.category h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+  margin-left: 370px;
+}
+
+/* Style for individual books */
+.book {
+  display: inline-block;
+  width: 30%; /* Adjust as needed for spacing */
+  margin-right: 2%; /* Adjust as needed for spacing */
+  text-align: center;
+  align-items: center;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.book h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.book p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Style for the "Apply for Book" button */
+.cta-button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.cta-button-2{
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 370px;
+}
+
+
+.cta-button:hover {
+  background-color: #ff8800;
+}
+
+/* Style for the "Apply for More Books" button */
+.category p a.cta-button-2 {
+  background-color: #333;
+  margin-top: 10px;
+}
+
+.category p a.cta-button-2:hover {
+  background-color: #555;
+}
+
+
+/* Your existing CSS styles here */
+
+/* Media query for screens with a maximum width of 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+  /* Style for the page header on smaller screens */
+  .page-header {
+    padding: 20px 0; /* Adjust the padding for smaller screens */
+  }
+
+  .book-categories {
+    margin: 50PX;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+
+  .page-header h1 {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  .page-header p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  /* Style for the book list section on smaller screens */
+  .book-list {
+    justify-content: center; /* Center-align items on smaller screens */
+  }
+
+  .book {
+    margin-left: 50px; /* Remove left margin for smaller screens */
+  }
+
+  .book h2 {
+    font-size: 20px; /* Reduce font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .book p {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  /* Style for the call to action section on smaller screens */
+  .cta-section {
+    padding: 20px 0; /* Adjust the padding for smaller screens */
+  }
+
+  .cta-section h2 {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+
+  .cta-section p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  /* Style for call to action buttons on smaller screens */
+  .cta-button {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .cta-button-2 {
+    margin-left: 120px;
+
+  }
+
+  /* Style for category subheaders on smaller screens */
+  .category h2 {
+    font-size: 24px; /* Reduce font size for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+}
+ 
+
+
+
 
 
 
