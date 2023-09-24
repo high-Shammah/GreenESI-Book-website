@@ -1402,7 +1402,7 @@ button[type="submit"] {
   }
 
   .book-categories {
-    margin: 50PX;
+    margin: 40px;
     justify-content: space-between;
     align-items: center;
   
@@ -1416,7 +1416,7 @@ button[type="submit"] {
 
   /* Adjust spacing for smaller screens */
   .book-categories {
-    gap: 10px;
+    gap: 3px;
   }
 
   /* Center the call-to-action buttons */
