@@ -1411,7 +1411,7 @@ button[type="submit"] {
     /* Media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
   .book {
-      margin-left: -20px;
+      margin-left: -30px;
     width: 100%; /* Single column on screens 768px and smaller */
   }
 
