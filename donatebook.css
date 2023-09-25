@@ -1417,7 +1417,7 @@ button[type="submit"] {
 
   /* Adjust spacing for smaller screens */
   .book-categories {
-      margin-left: -10px;
+      margin-left: 15px;
     gap: 3px;
   }
 
