@@ -142,7 +142,7 @@ nav {
 
 .button2 {
   background-color: #fff; /* Blue color for the secondary button */
-  color: #000; /* White text color */
+  color: #4CAF50; /* White text color */
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -150,7 +150,7 @@ nav {
   font-size: 18px;
   border: none;
   border-radius: 5px;
-    border: 3px solid #ccc;
+    border: 1px solid #4CAF50;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -665,7 +665,7 @@ nav {
   }
   
   .book {
-    width: 100px; /* Adjust image width as needed */
+    width: 150px; /* Adjust image width as needed */
     animation: slideUp 0.5s ease-in-out, parallax 1s ease-in-out infinite alternate;
     animation-fill-mode: both;
     animation-delay: 0.2s;
@@ -673,7 +673,7 @@ nav {
   
   .book img {
     width: 100%;
-    max-height: 200px; /* Adjust the max-height as needed for different heights */
+    max-height: 250px; /* Adjust the max-height as needed for different heights */
     object-fit: cover;
   }
   
@@ -686,6 +686,9 @@ nav {
   .book-description {
     border-top: 2px solid #ccc; /* Add a border to separate points */
     padding-top: 20px; /* Add spacing between points */
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     transition: transform 0.3s ease-in-out;
   }
   
